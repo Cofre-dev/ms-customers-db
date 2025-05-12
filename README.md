@@ -1,2 +1,2 @@
-# Integraci-nPlataforma
+# Ecommerce
 Proyecto de integración de plataformas
