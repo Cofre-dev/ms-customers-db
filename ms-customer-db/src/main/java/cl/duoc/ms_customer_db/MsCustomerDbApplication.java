@@ -10,8 +10,4 @@ public class MsCustomerDbApplication {
 		SpringApplication.run(MsCustomerDbApplication.class, args);
 	}
 
-	public string grettings(){
-		return "hola";
-	}
-
 }
