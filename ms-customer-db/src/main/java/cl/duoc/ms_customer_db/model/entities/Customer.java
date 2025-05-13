@@ -1,5 +1,15 @@
 package cl.duoc.ms_customer_db.model.entities;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
 @Entity
 @Table(name="customer")
 @Getter
@@ -7,19 +17,19 @@ package cl.duoc.ms_customer_db.model.entities;
 @ToString
 public class Customer {
 
-    @id
-    @GenerateValue(strategy = GenerationType.IDENTITY)
-    @Colum(name="id")
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="id")
     private long id;
-    @Colum(name="username")
+    @Column(name="username")
     private String username;
-    @Colum(name="password")
+    @Column(name="password")
     private String password;
-    @Colum(name="name")
+    @Column(name="name")
     private String name;
-    @Colum(name="lastname")
+    @Column(name="lastname")
     private String lastname;
-    @Colum(name="email")
-    private long email;
+    @Column(name="last_name")
+    private String last_name;
 
 }
