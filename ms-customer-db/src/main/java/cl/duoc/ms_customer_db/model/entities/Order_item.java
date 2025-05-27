@@ -11,26 +11,20 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Entity
-@Table(name="customer")
+@Table(name="order_item")
 @Getter
 @Setter
 @ToString
-public class Customer {
+public class Order_item {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
     private long id;
-    @Column(name="username")
-    private String username;
-    @Column(name="password")
-    private String password;
-    @Column(name="name")
-    private String name;
-    @Column(name="lastname")
-    private String lastname;
-    @Column(name="last_name")
-    private String last_name;
-
+    @Column(name="order_id")
+    private String order_id;
+    @Column(name="product_id")
+    private int product_id;
+    @Column(name="quantity")
+    private int quantity;
 }
-
