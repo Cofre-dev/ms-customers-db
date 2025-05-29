@@ -1,4 +1,4 @@
-package cl.duoc.ms_customer_db.model.entities;
+package cl.duoc.ms_customer_db.model.entities.AuthAPI;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
